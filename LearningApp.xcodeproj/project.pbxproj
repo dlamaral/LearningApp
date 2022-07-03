@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E72B30E42871EA9600030CFA /* CodeTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72B30E32871EA9600030CFA /* CodeTextView.swift */; };
 		E7587D64286E44EB0023EBC5 /* LearningApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7587D63286E44EB0023EBC5 /* LearningApp.swift */; };
 		E7587D66286E44EB0023EBC5 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7587D65286E44EB0023EBC5 /* HomeView.swift */; };
 		E7587D68286E44ED0023EBC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7587D67286E44ED0023EBC5 /* Assets.xcassets */; };
@@ -28,6 +29,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E72B30E32871EA9600030CFA /* CodeTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeTextView.swift; sourceTree = "<group>"; };
 		E7587D60286E44EB0023EBC5 /* LearningApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearningApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7587D63286E44EB0023EBC5 /* LearningApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningApp.swift; sourceTree = "<group>"; };
 		E7587D65286E44EB0023EBC5 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 				E7EF4A62286F4157008F900C /* ContentView.swift */,
 				E7EF4A64286F472F008F900C /* ContentViewRow.swift */,
 				E7B736B728705AB200E67394 /* ContentDetailView.swift */,
+				E72B30E32871EA9600030CFA /* CodeTextView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -234,6 +237,7 @@
 				E7FAAC11286E49390014B542 /* Lesson.swift in Sources */,
 				E7FAAC19286EE8C60014B542 /* HomeViewRow.swift in Sources */,
 				E7FAAC13286E4A060014B542 /* Test.swift in Sources */,
+				E72B30E42871EA9600030CFA /* CodeTextView.swift in Sources */,
 				E7587D66286E44EB0023EBC5 /* HomeView.swift in Sources */,
 				E7FAAC15286E4A130014B542 /* Questions.swift in Sources */,
 				E7EF4A63286F4157008F900C /* ContentView.swift in Sources */,
