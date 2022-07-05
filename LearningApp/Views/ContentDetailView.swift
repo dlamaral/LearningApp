@@ -40,6 +40,22 @@ struct ContentDetailView: View {
                             .foregroundColor(Color.white)
                     }
                 })
+            } else {
+                // Show the complete button
+                Button(action: {
+                    model.currentContentSelected = nil
+                }, label: {
+                    ZStack {
+                        Rectangle()
+                            .frame(height: 48)
+                            .foregroundColor(Color.green)
+                            .cornerRadius(10)
+                            .shadow(radius: 5)
+                        Text("Complete")
+                            .bold()
+                            .foregroundColor(Color.white)
+                    }
+                })
             }
         }
         .padding()
@@ -47,8 +63,8 @@ struct ContentDetailView: View {
     }
 }
 
-struct ContentDetailView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentDetailView()
-    }
-}
+//struct ContentDetailView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        ContentDetailView()
+//    }
+//}
