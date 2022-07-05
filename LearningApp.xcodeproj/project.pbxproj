@@ -26,6 +26,7 @@
 		E7FAAC15286E4A130014B542 /* Questions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FAAC14286E4A130014B542 /* Questions.swift */; };
 		E7FAAC17286E4AC80014B542 /* Module.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FAAC16286E4AC80014B542 /* Module.swift */; };
 		E7FAAC19286EE8C60014B542 /* HomeViewRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FAAC18286EE8C60014B542 /* HomeViewRow.swift */; };
+		E7FC57A72874E2A300CC389D /* RectangleCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FC57A62874E2A300CC389D /* RectangleCard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +50,7 @@
 		E7FAAC14286E4A130014B542 /* Questions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Questions.swift; sourceTree = "<group>"; };
 		E7FAAC16286E4AC80014B542 /* Module.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Module.swift; sourceTree = "<group>"; };
 		E7FAAC18286EE8C60014B542 /* HomeViewRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewRow.swift; sourceTree = "<group>"; };
+		E7FC57A62874E2A300CC389D /* RectangleCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangleCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 				E7EF4A64286F472F008F900C /* ContentViewRow.swift */,
 				E7B736B728705AB200E67394 /* ContentDetailView.swift */,
 				E72B30E32871EA9600030CFA /* CodeTextView.swift */,
+				E7FC57A62874E2A300CC389D /* RectangleCard.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -236,6 +239,7 @@
 				E7EF4A65286F472F008F900C /* ContentViewRow.swift in Sources */,
 				E7FAAC11286E49390014B542 /* Lesson.swift in Sources */,
 				E7FAAC19286EE8C60014B542 /* HomeViewRow.swift in Sources */,
+				E7FC57A72874E2A300CC389D /* RectangleCard.swift in Sources */,
 				E7FAAC13286E4A060014B542 /* Test.swift in Sources */,
 				E72B30E42871EA9600030CFA /* CodeTextView.swift in Sources */,
 				E7587D66286E44EB0023EBC5 /* HomeView.swift in Sources */,
