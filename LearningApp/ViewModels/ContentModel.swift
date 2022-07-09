@@ -137,6 +137,21 @@ class ContentModel: ObservableObject {
         }
     }
     
+    func nextQuestion() {
+        // Advance the question index
+        currentQuestionIndex += 1
+        
+        // Check that is within range
+        if currentQuestionIndex < currentModule!.test.questions.count {
+            // Set the current question property
+            currentQuestion = currentModule!.test.questions[currentQuestionIndex]
+            codeText = addStyling(currentQuestion!.content)
+        } else {
+            currentQuestionIndex = 0
+            currentQuestion = nil
+        }
+    }
+    
     // MARK: Code Styling
     
     private func addStyling (_ htmlString: String) -> NSAttributedString {
