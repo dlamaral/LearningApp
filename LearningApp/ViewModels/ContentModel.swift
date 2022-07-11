@@ -33,7 +33,10 @@ class ContentModel: ObservableObject {
     var styleData: Data?
     
     init () {
+        // Parse local included json Data
         getLocalData()
+        // Download remote json file and parse data
+        getRemoteData()
     }
     
     // MARK: Data Methods
@@ -76,6 +79,47 @@ class ContentModel: ObservableObject {
             print("Couldn't parse the style data.")
         }
         
+    }
+    
+    func getRemoteData() {
+        // String path
+        let urlString = "https://dlamaral.github.io/learningapp-data/data2.json"
+        
+        // Create a url object
+        let url = URL(string: urlString)
+        
+        guard url != nil else {
+            // Couldn't create url
+            return
+        }
+        
+        // Create a URL request
+        let request = URLRequest(url: url!)
+        
+        // Get the session and kick off the task
+        let session = URLSession.shared
+        
+        let dataTask = session.dataTask(with: request) { data, response, error in
+            // Check if there's an error
+            guard error == nil else {
+                // There is an error
+                return
+            }
+            // Handle the response
+            // Create Json and decode
+            let decoder = JSONDecoder()
+            do {
+                let modules = try decoder.decode([Module].self, from: data!)
+                // Append parsed modules into the modules property
+                self.modules += modules
+            }
+            catch {
+                // Couldn't parse
+                print(error)
+            }
+        }
+        // Kick of the data task
+        dataTask.resume()
     }
     
     // MARK: Module navigation methods
