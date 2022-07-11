@@ -110,7 +110,7 @@ class ContentModel: ObservableObject {
             let decoder = JSONDecoder()
             do {
                 let modules = try decoder.decode([Module].self, from: data!)
-                DispatchQueue.main.sync {
+                DispatchQueue.main.async {
                     // Append parsed modules into the modules property
                     self.modules += modules
                 }
